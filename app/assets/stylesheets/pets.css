@@ -1,3 +1,4 @@
+/* General body styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -11,15 +12,32 @@ h1 {
   margin-bottom: 30px;
 }
 
-.form-card, .pet-details {
+/* Common form and table styles */
+.form-card, .pet-details, .pet-table {
   background-color: #fff;
-  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   margin: 0 auto 40px;
   border-radius: 10px;
-  max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.form-card, .pet-details {
+  padding: 25px;
+  max-width: 600px;
+}
+
+.pet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pet-table th,
+.pet-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Form and input group styles */
 .form-group {
   margin-bottom: 15px;
 }
@@ -38,15 +56,24 @@ h1 {
   border: 1px solid #ccc;
 }
 
-.btn {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
+/* Button styles */
+.btn, .delete-btn, .edit-btn {
   padding: 10px 16px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   margin-right: 10px;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
 }
 
 .btn:hover {
@@ -69,48 +96,36 @@ h1 {
   background-color: #27ae60;
 }
 
+/* Actions container */
 .actions {
   margin-top: 20px;
   display: flex;
 }
 
-.pet-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto 40px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.pet-table th,
-.pet-table td {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-/* Error styling */
-.error-box {
+/* Error box styles */
+#error_explanation {
   background-color: #ffe6e6;
   border: 1px solid #ff4d4d;
   color: #cc0000;
   padding: 20px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   border-radius: 8px;
-}
+  max-width: 600px;
+  width: 90%;
 
-.error-box h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #b30000;
-}
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #b30000;
+  }
 
-.error-box ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin: 0;
-}
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
 
-.error-box li {
-  margin-bottom: 5px;
+  li {
+    margin-bottom: 5px;
+  }
 }
