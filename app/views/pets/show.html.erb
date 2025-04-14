@@ -1,18 +1,11 @@
-<p>
-  <strong>Name:</strong>
-  <%= @pet.name %>
-</p>
+<div class="pet-details">
+  <p><strong>Name:</strong> <%= @pet.name %></p>
+  <p><strong>Age:</strong> <%= @pet.age %></p>
+  <p><strong>Description:</strong> <%= @pet.description %></p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @pet.age %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pet.description %>
-</p>
-
-<%= link_to 'Edit', edit_pet_path %>
-<%= button_to 'Remove', pet_path, method: :delete %>
-<%= link_to 'Home', pets_path %>
+  <div class="actions">
+    <%= link_to 'Edit', edit_pet_path(@pet), class: "btn edit-btn" %>
+    <%= button_to 'Remove', pet_path(@pet), method: :delete, class: "btn delete-btn" %>
+    <%= link_to 'Home', pets_path, class: "btn" %>
+  </div>
+</div>

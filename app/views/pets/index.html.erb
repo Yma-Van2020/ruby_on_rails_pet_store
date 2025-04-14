@@ -1,16 +1,24 @@
-<h1>Pets table </h1>
+<h1>Pets Table</h1>
 
-<table>
-  <tr>
-    <th colspan="5"></th>
-  </tr>
-  <% @pets.each do |p| %>
+<table class="pet-table">
+  <thead>
     <tr>
-        <td><%= link_to p.name, pet_path(p)  %></td>
-        <td><%= link_to 'Edit', edit_pet_path(p) %></td>
-        <td><%= button_to 'Remove', pet_path(p), method: :delete %></td>
+      <th>Name</th>
+      <th>Edit</th>
+      <th>Remove</th>
     </tr>
-  <% end %>
+  </thead>
+  <tbody>
+    <% @pets.each do |p| %>
+      <tr>
+        <td><%= link_to p.name, pet_path(p) %></td>
+        <td><%= link_to 'Edit', edit_pet_path(p), class: "btn edit-btn" %></td>
+        <td><%= button_to 'Remove', pet_path(p), method: :delete, class: "btn delete-btn" %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
-<br />
-<%= link_to 'New pet', new_pet_path %>
+
+<div class="actions">
+  <%= link_to 'New Pet', new_pet_path, class: "btn" %>
+</div>
