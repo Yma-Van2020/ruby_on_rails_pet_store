@@ -10,11 +10,15 @@ class PetsController < ApplicationController
   def new
     @pet = Pet.new
   end
-
+  
   def create
-    @pet = Pet.new(params.require(:pet).permit(:name, :age, :description))
-    @pet.save
-    redirect_to @pet
+    @pet = Pet.new(params.require( :pet).permit( :name, :age, :description))
+    
+    if @pet.save
+      redirect_to @pet
+    else
+      render 'new'
+    end
   end
 
   def edit
@@ -23,8 +27,11 @@ class PetsController < ApplicationController
 
   def update
     @pet = Pet.find(params[:id])
-    @pet.update(params.require(:pet).permit(:name, :age, :description))
-    redirect_to @pet
+    if @pet.update(params.require(:pet).permit(:name, :age, :description))
+      redirect_to @pet
+    else
+      render 'edit'
+    end
   end
 
   def destroy
