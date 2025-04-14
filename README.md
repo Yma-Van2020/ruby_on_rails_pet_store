@@ -4,6 +4,16 @@
 
 Pets Manager is a simple Ruby on Rails application that allows users to manage pet records. Users can create, view, edit, and delete pets. Each pet record contains a name, age, and description. The application uses **ActiveRecord** to interact with the SQLite database, providing a seamless way to handle the database operations.
 
+![Screenshot 2025-04-14 at 3 06 43 PM](https://github.com/user-attachments/assets/fcf8ce66-7701-4ffe-86fe-9ca90ec60165)
+![Screenshot 2025-04-14 at 3 06 49 PM](https://github.com/user-attachments/assets/2fa9a2f6-950b-48f3-a8c4-4d451fd6f5fb)
+![Screenshot 2025-04-14 at 3 06 57 PM](https://github.com/user-attachments/assets/5e171b9d-a9e9-42f4-8b60-ecf6241efe34)
+![Screenshot 2025-04-14 at 3 07 10 PM](https://github.com/user-attachments/assets/23c91f24-81f9-405b-9b05-4573096b961d)
+![Screenshot 2025-04-14 at 3 07 23 PM](https://github.com/user-attachments/assets/c341164a-3aa5-402c-a342-ff21f5a90219)
+![Screenshot 2025-04-14 at 3 07 31 PM](https://github.com/user-attachments/assets/cde92268-b21d-49b8-a703-2733a4c43ea0)
+
+Mobile screen responsive design:
+![Screenshot 2025-04-14 at 3 07 55 PM](https://github.com/user-attachments/assets/c469f49d-8be2-4ce5-9a6f-7c8ba9be9256)
+
 ## Key Features:
 
 - View a list of all pets
