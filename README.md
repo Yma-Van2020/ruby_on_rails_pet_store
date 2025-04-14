@@ -24,25 +24,33 @@ Pets Manager is a simple Ruby on Rails application that allows users to manage p
 ## Installation Instructions:
 
 1. Clone the repository to your local machine:
+   ```
    $ git clone https://github.com/Yma-Van2020/ruby_on_rails_pet_store.git
    $ cd pets-app
+   ```
 
-2. Install required dependencies:
+3. Install required dependencies:
+   ```
    $ bundle install
+   ```
 
-3. Set up the database:
+5. Set up the database:
+   ```
    $ rails db:create
    $ rails db:migrate
+   ```
 
-4. Start the development server:
+7. Start the development server:
+   ```
    $ rails server
+   ```
 
-5. Open your browser and navigate to:
+9. Open your browser and navigate to:
+   ```
    http://localhost:3000/pets
+   ```
 
 ## Configuration:
-
-- SQLite3 is used as the database for this application.
 - The development, test, and production databases are configured in the `config/database.yml` file.
 
 ## ActiveRecord Integration:
@@ -67,3 +75,8 @@ ActiveRecord takes care of generating the necessary SQL commands behind the scen
 
 3. To delete a pet:
    Navigate to the pet's profile page and click the "Remove" button. Confirm the deletion.
+
+4. **To view pet details**:
+   Navigate to the pet's profile page to view its name, age, and description
+
+   
