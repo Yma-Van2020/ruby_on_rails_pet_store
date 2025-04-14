@@ -15,4 +15,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # create pets resource RESTful urls
+  resources :pets
+
+  # set root route
+  root 'pets#index'
 end

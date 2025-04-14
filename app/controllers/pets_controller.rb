@@ -4,9 +4,16 @@ class PetsController < ApplicationController
   end
 
   def show
+    @pet = Pet.find(params[:id])
   end
 
   def new
+  end
+
+  def create
+    @pet = Pet.new(params.require(:pet).permit(:name, :age, :description))
+    @pet.save
+    redirect_to @pet
   end
 
   def edit
