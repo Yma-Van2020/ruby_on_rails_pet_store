@@ -86,7 +86,7 @@ ActiveRecord takes care of generating the necessary SQL commands behind the scen
 3. To delete a pet:
    Navigate to the pet's profile page and click the "Remove" button. Confirm the deletion.
 
-4. **To view pet details**:
+4. To view pet details:
    Navigate to the pet's profile page to view its name, age, and description
 
    
